@@ -1,10 +1,8 @@
 # RoundCorners
 
-### 祝大家2021年少一点泪水，多一些回报，努力的都能实现！
-
 比较常用的ViewGroup和View的圆角实现，一发治好设计的圆角病。
 
-### [Demo](https://fir.im/gfhw)
+### 该项目不再维护，请移至[RoundView](https://github.com/csdn-mobile/RoundView)
 
 ### 效果预览
 
@@ -14,11 +12,10 @@
 |![](images/03.png)|![](images/08.png)|![](images/09.png)|
 
 ### 特点
-* LinearLayout、RelativeLayout、FrameLayout支持圆角
+* LinearLayout、RelativeLayout、FrameLayout、ConstraintLayout支持圆角
 * ImageView、TextView、View、Button支持圆角
-* EditText、ConstraintLayout支持圆角
 * CircleImageView（圆形图片）
-* 支持边框（不遮挡图片）
+* 支持边框
 * 可正常设置ripple（波纹不会突破边框）
 * 使用 **xml** 或者 **代码** 进行配置，使用简单
 * ......
@@ -37,7 +34,12 @@ allprojects {
 **Step 2. 添加项目依赖**
 ``` gradle
 dependencies {
-    implementation 'com.github.xingfude123:RoundCorners:1.1.2'
+    // 以下二选一
+
+    // AndroidX版本
+    implementation 'com.github.KuangGang:RoundCorners:2.0.0'
+    // 非AndroidX版本
+    implementation 'com.github.KuangGang:RoundCorners:1.3.0'
 }
 ```
 **Step 3. 在布局文件中添加需要的RoundCorners**
@@ -118,8 +120,8 @@ View的绘制看一下这篇文章即可，代码版本比较早，但是逻辑�
 ### 版本记录
 |版本号|更新内容|
 |---|---|
-|1.1.2|添加RoundEditText|
-|1.1.1|添加RoundConstraintLayout|
+|2.0.0|适配AndroidX|
+|1.3.0|1.修复代码设置圆角失效等问题<br>2.升级最低版本为5.0<br>3.添加RoundConstraintLayout|
 |1.1.0|边框颜色支持十六进制(#FFFFFF)|
 |1.0.6|修复Oppo等5.0\5.1系统手机崩溃问题|
 |1.0.4|1.代码设置圆角、边框尺寸支持浮点型<br>2.删除RoundViewPager|

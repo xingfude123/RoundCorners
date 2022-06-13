@@ -2,19 +2,19 @@ package com.kproduce.roundcorners;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.support.constraint.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import android.util.AttributeSet;
 
-
-import com.kproduce.roundcorners.util.RoundHelper;
-import com.kproduce.roundcorners.util.RoundMethodInterface;
+import com.kproduce.roundcorners.core.RoundHelper;
+import com.kproduce.roundcorners.core.RoundHelperImpl;
+import com.kproduce.roundcorners.core.RoundMethodInterface;
 
 /**
- * @author kuanggang on 2021/9/1
+ * @author kuanggang on 2019/12/10
  */
 public class RoundConstraintLayout extends ConstraintLayout implements RoundMethodInterface {
 
-    private RoundHelper mHelper = new RoundHelper();
+    private final RoundHelper mHelper = new RoundHelperImpl();
 
     public RoundConstraintLayout(Context context) {
         this(context, null);

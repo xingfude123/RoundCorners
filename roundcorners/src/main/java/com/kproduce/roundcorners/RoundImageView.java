@@ -2,18 +2,19 @@ package com.kproduce.roundcorners;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.support.v7.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatImageView;
 import android.util.AttributeSet;
 
-import com.kproduce.roundcorners.util.RoundHelper;
-import com.kproduce.roundcorners.util.RoundMethodInterface;
+import com.kproduce.roundcorners.core.RoundHelper;
+import com.kproduce.roundcorners.core.RoundHelperImpl;
+import com.kproduce.roundcorners.core.RoundMethodInterface;
 
 /**
  * @author kuanggang on 2019/12/10
  */
 public class RoundImageView extends AppCompatImageView implements RoundMethodInterface {
 
-    private RoundHelper mHelper = new RoundHelper();
+    private final RoundHelper mHelper = new RoundHelperImpl();
 
     public RoundImageView(Context context) {
         this(context, null);
