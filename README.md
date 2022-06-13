@@ -2,8 +2,6 @@
 
 比较常用的ViewGroup和View的圆角实现，一发治好设计的圆角病。
 
-### 该项目不再维护，请移至[RoundView](https://github.com/csdn-mobile/RoundView)
-
 ### 效果预览
 
 |![](images/07.png)|![](images/01.png)|![](images/02.png)|
@@ -34,12 +32,9 @@ allprojects {
 **Step 2. 添加项目依赖**
 ``` gradle
 dependencies {
-    // 以下二选一
 
     // AndroidX版本
-    implementation 'com.github.KuangGang:RoundCorners:2.0.0'
-    // 非AndroidX版本
-    implementation 'com.github.KuangGang:RoundCorners:1.3.0'
+    implementation 'com.github.xingfude123:RoundCorners:2.0.1'
 }
 ```
 **Step 3. 在布局文件中添加需要的RoundCorners**
@@ -120,6 +115,7 @@ View的绘制看一下这篇文章即可，代码版本比较早，但是逻辑�
 ### 版本记录
 |版本号|更新内容|
 |---|---|
+|2.0.1|增加RoundEditText|
 |2.0.0|适配AndroidX|
 |1.3.0|1.修复代码设置圆角失效等问题<br>2.升级最低版本为5.0<br>3.添加RoundConstraintLayout|
 |1.1.0|边框颜色支持十六进制(#FFFFFF)|

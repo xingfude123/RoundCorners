@@ -2,18 +2,20 @@ package com.kproduce.roundcorners;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
 
-import com.kproduce.roundcorners.util.RoundHelper;
-import com.kproduce.roundcorners.util.RoundMethodInterface;
+import androidx.appcompat.widget.AppCompatEditText;
+
+import com.kproduce.roundcorners.core.RoundHelper;
+import com.kproduce.roundcorners.core.RoundHelperImpl;
+import com.kproduce.roundcorners.core.RoundMethodInterface;
 
 /**
- * @author Jin on 2022/6/13
+ * @author Jin
  */
 public class RoundEditText extends AppCompatEditText implements RoundMethodInterface {
 
-    private RoundHelper mHelper = new RoundHelper();
+    private final RoundHelper mHelper = new RoundHelperImpl();
 
     public RoundEditText(Context context) {
         this(context, null);
