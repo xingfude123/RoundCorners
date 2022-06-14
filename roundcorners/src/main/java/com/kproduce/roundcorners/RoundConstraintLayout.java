@@ -2,7 +2,7 @@ package com.kproduce.roundcorners;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import android.support.constraint.ConstraintLayout;
 import android.util.AttributeSet;
 
 import com.kproduce.roundcorners.core.RoundHelper;

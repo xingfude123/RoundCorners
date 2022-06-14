@@ -2,9 +2,9 @@ package com.kproduce.roundcorners;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
-
-import androidx.appcompat.widget.AppCompatEditText;
+import android.widget.EditText;
 
 import com.kproduce.roundcorners.core.RoundHelper;
 import com.kproduce.roundcorners.core.RoundHelperImpl;

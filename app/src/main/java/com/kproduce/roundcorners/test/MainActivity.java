@@ -2,8 +2,9 @@ package com.kproduce.roundcorners.test;
 
 
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
 
 import com.kproduce.roundcorners.RoundTextView;
 
