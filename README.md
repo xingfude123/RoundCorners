@@ -34,7 +34,7 @@ allprojects {
 dependencies {
 
     // AndroidX版本
-    implementation 'com.github.xingfude123:RoundCorners:2.0.1'
+    implementation 'com.github.xingfude123:RoundCorners:2.0.2'
 }
 ```
 **Step 3. 在布局文件中添加需要的RoundCorners**
@@ -115,7 +115,7 @@ View的绘制看一下这篇文章即可，代码版本比较早，但是逻辑�
 ### 版本记录
 |版本号|更新内容|
 |---|---|
-|2.0.1|增加RoundEditText|
+|2.0.2|增加RoundEditText|
 |2.0.0|适配AndroidX|
 |1.3.0|1.修复代码设置圆角失效等问题<br>2.升级最低版本为5.0<br>3.添加RoundConstraintLayout|
 |1.1.0|边框颜色支持十六进制(#FFFFFF)|
