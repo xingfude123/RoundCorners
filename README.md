@@ -33,6 +33,9 @@ allprojects {
 ``` gradle
 dependencies {
 
+    // 非AndroidX版本
+    implementation 'com.github.xingfude123:RoundCorners:1.4.0'
+    
     // AndroidX版本
     implementation 'com.github.xingfude123:RoundCorners:2.0.2'
 }
@@ -117,6 +120,7 @@ View的绘制看一下这篇文章即可，代码版本比较早，但是逻辑�
 |---|---|
 |2.0.2|增加RoundEditText|
 |2.0.0|适配AndroidX|
+|1.4.0|增加RoundEditText|
 |1.3.0|1.修复代码设置圆角失效等问题<br>2.升级最低版本为5.0<br>3.添加RoundConstraintLayout|
 |1.1.0|边框颜色支持十六进制(#FFFFFF)|
 |1.0.6|修复Oppo等5.0\5.1系统手机崩溃问题|
